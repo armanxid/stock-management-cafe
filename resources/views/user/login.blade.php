@@ -28,7 +28,7 @@
                 <input type="password" class="form-control" name="password">
             </div>
             <div class="mb-3 text-center">
-                <button class="btn btn-success btn-sm">Masuk</button>
+                <input type="submit" class="btn btn-success btn-sm" value="Masuk">
             </div>
         </form>
     </div>
