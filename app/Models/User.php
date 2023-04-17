@@ -22,7 +22,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'type'
+        'type',
+        'status'
     ];
 
     /**
@@ -47,6 +48,12 @@ class User extends Authenticatable
     protected function type() : Attribute {
         return new Attribute(
             get: fn($value) => ["user", "admin"][$value]
+        );
+    }
+
+    protected function status() : Attribute {
+        return new Attribute(
+            get: fn($value) => ["aktif", "non-aktif"][$value]
         );
     }
 }

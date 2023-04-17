@@ -25,6 +25,8 @@ Auth::routes();
 //user
 Route::middleware(['auth','user-access:user'])->group(function() {
     Route::get('/home' , [HomeController::class, 'userDashboard'])->name('user.dashboard');
+    Route::get('/account' , [HomeController::class, 'account'])->name('account');
+    Route::get('/transaksi' , [HomeController::class, 'transaction'])->name('transaksi');
 });
 
 //admin

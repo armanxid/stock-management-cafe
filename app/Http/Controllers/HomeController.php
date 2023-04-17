@@ -35,4 +35,14 @@ class HomeController extends Controller
     {
         return view('user.dashboard');
     }
+
+    public function account()
+    {
+        return view('user.account');
+    }
+
+    public function transaction()
+    {
+        return view('user.transaction');
+    }
 }
