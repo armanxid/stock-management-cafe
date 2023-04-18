@@ -45,4 +45,8 @@ class HomeController extends Controller
     {
         return view('user.transaction');
     }
+
+    public function home(){
+        return view('user.stokrumah');
+    }
 }

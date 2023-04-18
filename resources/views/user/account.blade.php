@@ -26,7 +26,7 @@
                             <form action="">
                                 <input type="password" placeholder="password baru" class="form-control mb-1">
                                 <input type="password" placeholder="ulangi password" class="form-control mb-1">
-                                <input type="submit" value="Ubah">
+                                <input type="submit" value="Ganti Password" class="bg-success rounded">
                             </form>
                         </div>
                     </div>

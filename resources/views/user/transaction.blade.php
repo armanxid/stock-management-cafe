@@ -4,7 +4,7 @@
 <div class="container text-center fs-4">
     <div class="row align-item-start">
         <div class="col border m-1 p-2 rounded">
-           <a href="" style="text-decoration: none ; color: black">
+           <a href="{{ route('rumah') }}" style="text-decoration: none ; color: black">
                 <img src="{{ asset('assets/image/rumah.png') }}"  alt="kelola akun" class="mt-2" width="64" height="64">
                 <p class="mt-3">Stok Rumah</p>
            </a>
