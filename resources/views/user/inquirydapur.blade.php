@@ -6,14 +6,6 @@
     </div>
     <form action="" style="font-size: 12px">
         <div class="row ms-3 me-3 mt-3">
-            <label class="col-1 text-end">Tipe :</label>
-            <select name="" id="" class="col-1">
-                <option value="">Semua</option>
-                <option value="">Dapur</option>
-                <option value="">Bar</option>
-            </select>
-        </div>
-        <div class="row ms-3 me-3 mt-3">
             <label class="col-1 text-end">Status :</label>
             <select name="" id="" class="col-1">
                 <option value="">Sisa</option>

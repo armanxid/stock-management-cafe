@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StokRumahController extends Controller
+class StokDapurController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('user.inquiryrumah');
+        //
     }
 
     /**
@@ -61,9 +61,9 @@ class StokRumahController extends Controller
     {
         //
     }
-    
-    public function tambah()
+
+    public function inquiry()
     {
-        return view('user.tambahrumah');
+        return view('user.inquirydapur');
     }
 }

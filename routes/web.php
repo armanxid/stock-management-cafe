@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\StokDapurController;
 use App\Http\Controllers\StokRumahController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,7 +30,10 @@ Route::middleware(['auth','user-access:user'])->group(function() {
     Route::get('/account' , [HomeController::class, 'account'])->name('account');
     Route::get('/transaksi' , [HomeController::class, 'transaction'])->name('transaksi');
     Route::get('/rumah' , [HomeController::class, 'home'])->name('rumah');
+    Route::get('/dapur' , [HomeController::class, 'dapur'])->name('dapur');
     Route::get('/rumah/inquiry' , [StokRumahController::class, 'index'])->name('inquiryrumah');
+    Route::get('/rumah/inquiry' , [StokDapurController::class, 'inquiry'])->name('inquirydapur');
+    Route::get('/rumah/tambah' , [StokRumahController::class, 'tambah'])->name('tambahrumah');
 });
 
 //admin

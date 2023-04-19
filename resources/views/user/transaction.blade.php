@@ -10,7 +10,7 @@
            </a>
         </div>
         <div class="col border m-1 rounded p-2">
-            <a href="" style="text-decoration: none ; color: black">
+            <a href="{{ route('dapur') }}" style="text-decoration: none ; color: black">
                 <img src="{{ asset('assets/image/dapur.png') }}"  alt="transaksi" width="64" height="64" class="mt-2">
                 <p class="mt-3">Stok Dapur</p>
             </a>

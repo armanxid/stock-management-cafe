@@ -49,4 +49,9 @@ class HomeController extends Controller
     public function home(){
         return view('user.stokrumah');
     }
+
+    public function dapur()
+    {
+        return view('user.stokdapur');
+    }
 }
