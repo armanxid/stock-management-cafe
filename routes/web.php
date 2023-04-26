@@ -32,7 +32,7 @@ Route::middleware(['auth','user-access:user'])->group(function() {
     Route::get('/rumah' , [HomeController::class, 'home'])->name('rumah');
     Route::get('/dapur' , [HomeController::class, 'dapur'])->name('dapur');
     Route::get('/rumah/inquiry' , [StokRumahController::class, 'index'])->name('inquiryrumah');
-    Route::get('/rumah/inquiry' , [StokDapurController::class, 'inquiry'])->name('inquirydapur');
+    Route::get('/dapur/inquiry' , [StokDapurController::class, 'inquiry'])->name('inquirydapur');
     Route::get('/rumah/tambah' , [StokRumahController::class, 'tambah'])->name('tambahrumah');
 });
 
