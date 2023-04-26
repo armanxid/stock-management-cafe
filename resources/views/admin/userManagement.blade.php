@@ -66,14 +66,24 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Adrian Cavallino</td>
-                        <td>yanskutt</td>
-                        <td>Admin</td>
-                        <td>Aktif</td>
-                        <td><button type="button" class="btn btn-warning">Warning</button></td>
-                    </tr>
+                    @php
+                        $i = $data->firstItem();
+                    @endphp
+
+                    @foreach ($data as $item)
+                        <tr>
+                            <th scope="row">{{ $i }}</th>
+                            <td>{{ $item->name }}</td>
+                            <td>{{ $item->email }}</td>
+                            <td>{{ $item->type }}</td>
+                            <td>{{ $item->status }}</td>
+                            <td><button type="button" class="btn btn-warning">Warning</button></td>
+                        </tr>
+                        @php
+                            $i++;
+                        @endphp
+                    @endforeach
+                    
                 </tbody>
             </table>
         </div>

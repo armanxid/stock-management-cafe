@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserManagementController extends Controller
@@ -11,12 +12,14 @@ class UserManagementController extends Controller
      */
     public function index(Request $request)
     {
-        // $katakunci = $request->katakunci;
-        // $jumlahBaris = 10;
-        // if (strlen($katakunci)) {
-        //     $data = 
-        // }
-        return view('admin.userManagement');
+        $katakunci = $request->katakunci;
+        $jumlahBaris = 10;
+        if (strlen($katakunci)) {
+            $data = User::where("name", "like", "%katakunci%")->paginate($jumlahBaris);
+        } else {
+            $data = User::paginate($jumlahBaris);
+        }
+        return view('admin.userManagement')->with('data', $data);
     }
 
     /**
