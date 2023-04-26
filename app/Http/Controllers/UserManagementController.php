@@ -9,8 +9,13 @@ class UserManagementController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        // $katakunci = $request->katakunci;
+        // $jumlahBaris = 10;
+        // if (strlen($katakunci)) {
+        //     $data = 
+        // }
         return view('admin.userManagement');
     }
 

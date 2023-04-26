@@ -8,7 +8,7 @@
                 <input type="text" class="form-control" id="finduser" placeholder="Cari nama lengkap user">
               </div>
               <div class="col-auto">
-                <button type="submit" class="btn btn-success mb-3">Cari User</button>
+                <button type="submit" class="btn btn-secondary mb-3">Cari User</button>
               </div>
         </div>
         <b>Filter</b>
@@ -29,22 +29,30 @@
                 <label for="checkadmin">Admin</label>
             </div>
         </div>
-        <p>Status:</p>
-        <div class="input-group mb-4">
-            <div class="input-group-text">
-                
-                <input class="form-check-input m-1" checked type="checkbox" id="allstatus" value="allstatus" aria-label="Checkbox for following text input">
-                <label for="allstatus">Semua</label>
+        <div class="row justify-content-between">
+            <div class="col-auto align-self-end">
+                <p>Status:</p>
+                <div class="input-group mb-4">
+                    <div class="input-group-text">
+                        
+                        <input class="form-check-input m-1" checked type="checkbox" id="allstatus" value="allstatus" aria-label="Checkbox for following text input">
+                        <label for="allstatus">Semua</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input class="form-check-input m-1" type="checkbox" id="activeuser" value="user" aria-label="Checkbox for following text input">
+                        <label for="activeuser">Aktif</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input class="form-check-input m-1" type="checkbox" id="inactiveuser" value="admin" aria-label="Checkbox for following text input">
+                        <label for="inactiveuser">Non-Aktif</label>
+                    </div>
+                </div>
             </div>
-            <div class="input-group-text">
-                <input class="form-check-input m-1" type="checkbox" id="activeuser" value="user" aria-label="Checkbox for following text input">
-                <label for="activeuser">Aktif</label>
-            </div>
-            <div class="input-group-text">
-                <input class="form-check-input m-1" type="checkbox" id="inactiveuser" value="admin" aria-label="Checkbox for following text input">
-                <label for="inactiveuser">Non-Aktif</label>
+            <div class="col-auto align-self-end">
+                <button type="submit" class="btn btn-success mb-3">Tambah user baru</button>
             </div>
         </div>
+        
         <div class="col-auto">
             <table class="table table-striped-columns table-bordered">
                 <thead>
