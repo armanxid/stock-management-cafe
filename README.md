@@ -1,4 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+ganti text tombol/hapus "input"
+tambah tombol download di rincian resume
+tombol daftar item dihilangkan untuk role user, kecuali admin
+role user hanya nambah, tidak boleh edit
+tambah kolom keterangan penambahan, pemakaian
+halaman edit transaksi oleh admin ditampilkan semua transaksi pada bulan tersebut
+dalam 1 halaman laporan, bisa menampilkan 2 - 3 bulan laporan tentang stok
+tambah validasi/konfirmasi sebelum input tambah/sisa barang oleh user
+
+navbar disamakan seperti dashboard
+layout disamakan seperti tabel
+sort langsung di kolom tabel user
+filter diatas/dibawah kolom pencarian
+
+12 april 2023
+user bisa akses semua tempate (rumah, bar, dapur)
+admin bisa ganti password user
+tambah foto barang saat tambah barang
+kurang tanggal input dan tanggal update di tabel kelola item
+tambah kolom textarea label 'keterangan'
+tampilan laporan masing-masing tempat, rumah, bar, dapur, dan masing-masing aktivitas tambah, pakai, sisa
+pengelolaan item dibagi tempatnya untuk rumah, dapur, bar
+tombol tambah ditaruh di atas
+
+13 April 2023
+pak agus:
+maintenance role
+edit user tambahkan konfirmasi password saat ganti password
+tambah kolom link foto item di daftar item
+tampilkan preview foto di halaman edit item
+tombol hapus barang bukan untuk hapus record barang
+opsional -> edit log transaksi tidak diperlukan tetapi diperbaiki pada tanggal di hari tersebut
+Pak Kiki:
+
+-
+
+15 April 2023
+Pak kiki:
+tidak langsung tampilkan data, harus pakai tombol submit
+menampilkan tipe barang, masukkan di kolom
+hilangkan kategori barang
+tambah form tanggal saat penambahan stok
+setelah klik stok rumah, ada 2 menu: inquiry stok rumah, tambah stok rumah
+tambah/ganti kolom total stok saat ini, tambah stok terakhir & tanggal, tambah stok saat ini & tanggal
+
+## Pak Agus:
+
+Role Admin
+
+1. pengelolaan akun
+   a.tampilkan user (sudah)
+   b. detail user (sudah) target 27 April
+   c. tambah edit user (set aktif non aktif, change pss user) target 3 Mei
+   d. manage role user target 5 mei
+   e. change password 1 Hari target 6 mei
+2. Pengelolaan item
+   a. tambah edit hapus item target 11 mei
+   b. edit transaksi (tambah & pakai stok) target 17 mei
+3. Laporan target 30 Mei per modul 2 hari
+   a. tambah stok
+   b. pemakaian stok
+   c. sisa stok
+   d. Log aktivitas (Tgl Transaksi jam, User, Aktivitasnya, lokasi)
+
+Role User
+
+1. Pengelolaan akun
+   a. change password
+2. Input transaksi
+   a. stok Rumah
+   a. Inquiry Stok Rumah - Tampil Halaman Inquiry Stok Rumah
+   b. Tambah Stok Rumah - Masukkan Tanggal - Tampil Halaman Input Tambah Stok Rumah
+   b. Stok Dapur
+   a. Inquiry Stok Dapur - Tampil Halaman Inquiry Stok Dapur
+   b. Tambah Stok Dapur - Masukkan Tanggal - Tampil Halaman Input Tambah Stok Dapur
+   c. Pakai Stok Dapur - Masukkan Tanggal - Tampil Halaman Input Pakai Stok Dapur
+
+    c. Stok Bar
+    a. inquiry Stok Bar - Tampil Halaman Inquiry Stok Bar
+    b. Tambah Stok Bar - Masukkan Tanggal - Tampil Halaman Input Tambah Stok Bar
+    c. Pakai Stok Bar - Masukkan Tanggal - Tampil Halaman Input Pakai Stok Bar
+
+3. Laporan
+   a. Log aktivitas (Tgl Transaksi jam, User, Aktivitasnya, lokasi)
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +148,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
