@@ -59,7 +59,7 @@
                     <tr>
                         <th scope="col">NO</th>
                         <th scope="col">NAMA</th>
-                        <th scope="col">USERNAME</th>
+                        <th scope="col">EMAIL</th>
                         <th scope="col">ROLE</th>
                         <th scope="col">STATUS</th>
                         <th scope="col">INFORMASI</th>
@@ -76,8 +76,8 @@
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->type }}</td>
-                            <td>{{ $item->status }}</td>
-                            <td><button type="button" class="btn btn-warning">Warning</button></td>
+                            <td class="{{ $item -> status == 'active' ? 'text-success' : 'text-danger' }}">{{ $item->status }}</td>
+                            <td><a href="{{ route('user-management.show', $item->id) }}" class="btn btn-warning">Detail</a></td>
                         </tr>
                         @php
                             $i++;

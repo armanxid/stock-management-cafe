@@ -19,7 +19,7 @@ class UserManagementController extends Controller
         } else {
             $data = User::paginate($jumlahBaris);
         }
-        return view('admin.userManagement')->with('data', $data);
+        return view('admin.user-management.userManagementMain')->with('data', $data);
     }
 
     /**
@@ -43,7 +43,7 @@ class UserManagementController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('admin.user-management.userDetail', ['user' => User::findOrFail($id)]);
     }
 
     /**
