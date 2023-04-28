@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StokDapurController;
 use App\Http\Controllers\StokRumahController;
@@ -34,6 +35,7 @@ Route::middleware(['auth','user-access:user'])->group(function() {
     Route::get('/rumah/inquiry' , [StokRumahController::class, 'index'])->name('inquiryrumah');
     Route::get('/dapur/inquiry' , [StokDapurController::class, 'inquiry'])->name('inquirydapur');
     Route::get('/rumah/tambah' , [StokRumahController::class, 'tambah'])->name('tambahrumah');
+    Route::post('/account/changepassword/{id}', [AccountController::class, 'changePassword'])->name('ubahpassword');
 });
 
 //admin
